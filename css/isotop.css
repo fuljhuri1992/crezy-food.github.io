@@ -1,0 +1,225 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- button ---- */
+
+.button-group h2 {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+    font-weight: 550;
+    background-color: #fff;
+    
+}
+
+.button-group h2:hover {
+  color: #808080;
+}
+
+.button-group h2:active,
+.button-group h2.is-checked {
+  color: #CE0000#CE0000;
+}
+
+.button-group h2.is-checked {
+  color: crimson;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button-group h2:active {
+  color: crimson;
+}
+
+/* ---- button-group ---- */
+
+.button-group {
+  margin: 30px 0;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+}
+
+/*
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }*/
+
+/* ---- isotope ---- */
+
+
+
+/* clear fix */
+
+
+/* ---- .element-item ---- */
+#menus{
+    padding: 6.25rem 0;
+    /*background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url(../image/isotop-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;*/
+    overflow: hidden;
+}
+#menus h1{
+    font-size: 3.5vw;
+    letter-spacing: 1px;
+    padding:0;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 590;
+    position: relative;
+    color: #DAA520;
+    margin: 0;
+}
+#menus span{
+    color: #262626;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 590;
+}
+
+#menus .click{
+    padding: 10px 25px;
+    background: #CE0000;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.grid{
+    margin-bottom: 50px;
+}
+.element-item {
+  position: relative;
+  width: 100%;
+  color: #262524;
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+}
+.iso-content{
+    align-items: center;
+}
+.iso-pic{
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+.iso-pic img{
+    width: 100%;
+    height: 100%;
+}
+.iso-info{
+    padding: 10px;
+    border-left: 1px solid #c6c6c6;
+}
+.iso-info h3{
+    font-size: 18px;
+    font-weight: 550;
+    color: #5f5f5f;
+    text-align: left;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.iso-info p{
+    color: #828282;
+    font-size: 14px;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.iso-info h6{
+    color: #CE0000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+}
+
+.element-item.drinks     { background: #fff; }
+.element-item.lunch  { background: #fff; }
+.element-item.breakfast      { background: #fff; }
+.element-item.dinner        { background: #fff; }
+.element-item.dessert      { background: #fff; }
+.element-item.starter      { background: #fff; }
+
+/*responsive*/
+
+@media screen and (max-width:400px){
+    h2 {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  color: #222;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+     font-weight: 550; 
+}
+    #menus h1{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 590;
+    position: relative;
+}
+    .iso-content{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid silver;
+}
+    .iso-pic{
+    max-width: 100%;
+    height: 140px;
+    border-radius:0;
+    overflow: hidden;
+        margin-bottom: 20px;
+}
+.iso-pic img{
+    width: 100%;
+    height: 100%;
+}
+    .grid:first-child{
+        margin-bottom: 0;
+    }
+    .iso-info h6{
+    width: 80px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+}
+@media screen and (max-width:768px){
+    .fltr-img{
+        display: none;
+    }
+    .grid:first-child{
+    margin-bottom: 0;
+}
+}
+@media screen and (max-width:1199px){
+    .fltr-img{
+        width: 60px;
+    }
+    
+}
+@media screen and (max-width:992px){
+    #menus h1{
+    font-size: 5vw;
+}
+    
+}
+@media screen and (max-width:600px){
+    #menus h1{
+    font-size: 9vw;
+}
+    
+}
